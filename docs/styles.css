@@ -40,7 +40,7 @@ body, html {
 
 .parallax {
   /* The image used */
-  background-image: url("images/levels.jpg");
+  background-image: url("../images/levels.jpg");
 
   /* Full height */
   height: 100%;
@@ -63,7 +63,7 @@ body, html {
 
 .parallax2 {
   /* The image used */
-  background-image: url("images/external_blue.jpg");
+  background-image: url("../images/external_blue.jpg");
 
   /* Full height */
   height: 100%;
@@ -82,7 +82,7 @@ body, html {
 
 .parallax3 {
   /* The image used */
-  background-image: url("images/reclaimedWood.jpg");
+  background-image: url("../images/reclaimedWood.jpg");
 
   /* Full height */
   height: 100%;
@@ -101,7 +101,7 @@ body, html {
 
 .parallax4 {
   /* The image used */
-  background-image: url("images/external_purple.jpg");
+  background-image: url("../images/external_purple.jpg");
 
   /* Full height */
   height: 100%;
@@ -137,7 +137,7 @@ body, html {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-image: url(images/blurryDictionary.jpg);
+    background-image: url(../images/blurryDictionary.jpg);
     color: white;
     display: flex;
     align-items: center;
@@ -209,18 +209,18 @@ body, html {
     }
 
     .parallax {
-        background-image: url("images/biltmore.jpg");
+        background-image: url("../images/biltmore.jpg");
     }
 
     .parallax2 {
-        background-image: url("images/columns.jpg");
+        background-image: url("../images/columns.jpg");
     }
 
     .parallax3 {
-        background-image: url("images/poolTable.jpg");
+        background-image: url("../images/poolTable.jpg");
     }
 
     .parallax4 {
-        background-image: url("images/woodHead.jpg");
+        background-image: url("../images/woodHead.jpg");
     }
 }
