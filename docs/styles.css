@@ -200,7 +200,7 @@ h3 {
     width: 25vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1250px) {
     h3 {
         font-size: 80%;
     }
@@ -272,4 +272,5 @@ h3 {
         justify-content: center;
         scroll-snap-align: start;
     }
+
 }
