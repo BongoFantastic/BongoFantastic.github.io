@@ -297,9 +297,9 @@ body, html {
     }
 
     #contacts {
-        left: 5vw;
+        left: 1vw;
         bottom: 5vh;
-        width: 25%;
+        width: 10%;
         align-items: center;
         flex-direction: column-reverse;
     }
