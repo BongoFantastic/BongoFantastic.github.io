@@ -13,8 +13,8 @@ body, html {
     position: fixed;
     top: 5vh;
     width: 17vw;
-    left: 41.5vw;
-    z-index: 0;
+    left: 5vw;
+    z-index: 1;
 }
 
 #contacts {
@@ -22,15 +22,24 @@ body, html {
     bottom: 5vh;
     left: 5vw;
     display: flex;
-    flex-direction: column;
-    width: 5%;
-    align-items: left;
+    flex-direction: row;
+    height: 5%;
+    align-items: start;
+    z-index: 1;
+    flex-basis: 1 0 auto;
 }
 
 .icon {
-    margin: 10px 0;
-    filter: contrast(0%) brightness(1000%); 
-    width: 60px;
+    filter: contrast(0%) brightness(1000%);
+    width: 100%;
+    align-self: center;
+}
+
+#squareRat {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
 }
 
 .icon:hover {
@@ -43,7 +52,7 @@ body, html {
   background-image: url("../images/levels.jpg");
 
   /* Full height */
-  height: 100%;
+  height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -53,7 +62,7 @@ body, html {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   scroll-snap-align: start;
 }
 
@@ -76,7 +85,7 @@ body, html {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   scroll-snap-align: start;
 }
 
@@ -95,7 +104,7 @@ body, html {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   scroll-snap-align: start;
 }
 
@@ -114,24 +123,29 @@ body, html {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   scroll-snap-align: start;
 }
 
 .shadowbox {
     background-color: rgb(0,0,0,.5);
-    color: white;
-    padding: 50px 60px;
-    display: flex;
-    align-items: center;
-    font-family: bodyText;
-    text-align: center;
-    width: 50vw;
+    width: 35vw;
+    height: inherit;
+    z-index: 0;
+    position: fixed;
+}
+
+.deskTextBox {
+    left: 5vw;
+    width: 25vw;
     z-index: 2;
+    padding: 5vw;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    color: white;
+    font-family: bodyText;
 }
 
 .splash {
@@ -187,7 +201,11 @@ h3 {
 
 @media (max-width: 1250px) {
     h3 {
-        font-size: 1.5rem;
+        font-size: 80%;
+    }
+
+    #squareRat {
+        margin: 10px 0;
     }
     
     #logo {
@@ -197,8 +215,10 @@ h3 {
 
     #contacts {
         left: 75vw;
+        bottom: 5vh;
         width: 25%;
         align-items: center;
+        flex-direction: column-reverse;
     }
 
     .icon {
@@ -208,23 +228,37 @@ h3 {
     }
 
     .shadowbox {
-        width: 100vw;
-        padding: 10%;
+        opacity: 0;
+    }
+
+    .deskTextBox {
+        background-color: rgb(0,0,0,.5);
+        width: 50vw;
+        z-index: 2;
+        padding: 5vw;
     }
 
     .parallax {
         background-image: url("../images/biltmore.jpg");
+        min-height: 100%;
+        justify-content: center;
     }
 
     .parallax2 {
         background-image: url("../images/columns.jpg");
+        min-height: 100%;
+        justify-content: center;
     }
 
     .parallax3 {
-        background-image: url("../images/poolTable.jpg");
+        background-image: url("../images/B62A81D6-0EF2-4808-A64C-DB97F5294F02.JPG");
+        min-height: 100%;
+        justify-content: center;
     }
 
     .parallax4 {
         background-image: url("../images/woodHead.jpg");
+        min-height: 100%;
+        justify-content: center;
     }
 }
