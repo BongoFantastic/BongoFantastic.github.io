@@ -201,6 +201,10 @@ h3 {
 }
 
 @media (max-width: 1250px) {
+    body, html {
+    scroll-snap-type: none;
+}
+    
     h3 {
         font-size: .8rem;
     }
@@ -245,10 +249,7 @@ h3 {
         background-image: url("../images/biltmore.jpg");
         height: 110%;
         background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
         justify-content: center;
-        scroll-snap-align: center;
     }
 
     .parallax2 {
@@ -256,7 +257,6 @@ h3 {
         height: 110%;
         background-attachment: scroll;
         justify-content: center;
-        scroll-snap-align: start;
     }
 
     .parallax3 {
@@ -264,7 +264,6 @@ h3 {
         height: 110%;
         background-attachment: scroll;
         justify-content: center;
-        scroll-snap-align: center;
     }
 
     .parallax4 {
@@ -272,6 +271,5 @@ h3 {
         height: 110%;
         background-attachment: scroll;
         justify-content: center;
-        scroll-snap-align: center;
     }
 }
