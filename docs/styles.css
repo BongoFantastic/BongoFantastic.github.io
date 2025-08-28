@@ -240,25 +240,25 @@ h3 {
 
     .parallax {
         background-image: url("../images/biltmore.jpg");
-        min-height: 100%;
+        width: 100%;
         justify-content: center;
     }
 
     .parallax2 {
         background-image: url("../images/columns.jpg");
-        min-height: 100%;
+        width: 100%;
         justify-content: center;
     }
 
     .parallax3 {
         background-image: url("../images/B62A81D6-0EF2-4808-A64C-DB97F5294F02.JPG");
-        min-height: 100%;
+        width: 100%;
         justify-content: center;
     }
 
     .parallax4 {
         background-image: url("../images/woodHead.jpg");
-        min-height: 100%;
+        width: 100%;
         justify-content: center;
     }
 }
